@@ -1,3 +1,5 @@
+NOTE: I am exploring "translating" this to Java. But for the moment this is just a fork of the following Python based book.
+
 Problem Solving with Algorithms and Data Structures Using Python
 ================================================================
 
