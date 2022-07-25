@@ -8,7 +8,7 @@ import pkg_resources
 from runestone import get_master_url
 
 ######## CHANGE THIS ##########
-project_name = "pythonds3"
+project_name = "javads"
 ###############################
 
 # if you want to override the master url do it here.  Otherwise setting it to None
@@ -20,8 +20,8 @@ if master_url is None:
     master_url = get_master_url()
 
 master_app = 'runestone'
-dynamic_pages = False
-serving_dir = './build/pythonds3'
+dynamic_pages = True
+serving_dir = './build/javads'
 if dynamic_pages:
     dest = './published'
 else:
@@ -49,7 +49,7 @@ options(
             'dynamic_pages': dynamic_pages,
             'python3': 'true',
             'dburl': 'postgresql://bmiller@localhost/runestone',
-            'basecourse': 'pythonds3',
+            'basecourse': 'javads',
             'downloads_enabled': 'false',
             'enable_chatcodes': 'false',
             'allow_pairs': 'false'

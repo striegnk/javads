@@ -5,23 +5,43 @@
 Getting Started with Data
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We stated above that Python supports the object-oriented programming
-paradigm. This means that Python considers data to be the focal point of
-the problem-solving process. In Python, as well as in any other
-object-oriented programming language, we define a **class** to be a
-description of what the data look like (the state) and what the data can
-do (the behavior). Classes are analogous to abstract data types because
-a user of a class only sees the state and behavior of a data item. Data
-items are called **objects** in the object-oriented paradigm. An object
-is an instance of a class.
+Java is an object-oriented programming language. This means that
+Java considers data to be the focal point of the problem-solving
+process. In Java, as well as in any other object-oriented
+programming language, we define a **class** to be a description of
+what the data look like (the state) and what the data can do (the
+behavior). Classes are analogous to abstract data types because a user
+of a class only sees the state and behavior of a data item. Data items
+are called **objects** in the object-oriented paradigm. An object is
+an instance of a class.
 
-Built-in Atomic Data Types
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Built-in Primitive Data Types
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We will begin our review by considering the atomic data types. Python
-has two main built-in numeric classes that implement the integer and
-floating point data types. These Python classes are called ``int`` and
-``float``. The standard arithmetic operators, +, -, \*, /, and \*\*
+We will begin by reviewing Java's primitive data types. Java has eight primitive data types. Five types to represent integers, two types to represent floating point numbers, and a Boolean data type.
+
+Integer Data Types
+^^^^^^^^^^^^^^^^^^
+
+Java's integer data types are called ``byte``, ``char``, ``short``, ``int``, and ``long``. They differ in the amount of memory they require and the minimum and maximum values they can hold.
+
+.. _tab_java_integer_types:
+
+.. table:: **Table 1: Java primitive data types representing integers**
+
+    ======== ========== ========================== =========================
+    **Type** **Memory** **Minimum**                **Maximum**
+    ======== ========== ========================== =========================
+    byte     1 byte     -128                       127
+    char     2 bytes    0                          65535
+    short    2 bytes    -32768                     32767
+    int      4 bytes    -2,147,483,648             2,147,483,647 
+    long     8 bytes    -9,223,372,036,854,775,808 9,223,372,036,854,775,808
+    ======== ========== ========================== =========================
+
+WORK IN PROGRESS
+    
+The standard arithmetic operators, +, -, \*, /, and \*\*
 (exponentiation), can be used with parentheses forcing the order of
 operations away from normal operator precedence. Other very useful
 operations are the remainder (modulo) operator (%) and integer division (//).

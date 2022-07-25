@@ -78,15 +78,32 @@ This interface is the way we as users communicate with the underlying
 complexities of the implementation.
 
 As another example of abstraction,
-consider the Python ``math`` module. Once we import the module, we can
-perform computations such as
+consider the Java ``Math`` class. 
 
-::
+.. tabbed:: Code_Sample
 
-    >>> import math
-    >>> math.sqrt(16)
-    4.0
-    >>>
+  .. tab:: Java
+
+    .. activecode:: Java
+      :caption: Sqrt in Java
+      :language: java
+
+       public class Sqrt {
+           public static void main(String[] args) {
+               System.out.println(Math.sqrt(16));
+	   }
+       }		 
+
+  .. tab:: Python
+
+    .. activecode:: Python
+       :caption: Sqrt in Python
+       :optional:
+
+       #Outputs the square root of a given number.
+       import math
+
+       print(math.sqrt(16))
 
 This is an example of **procedural abstraction**. We do not necessarily
 know how the square root is being calculated, but we know what the
@@ -102,7 +119,6 @@ parameters), and what will be returned. The details are hidden inside
 .. _fig_procabstraction:
 
 .. figure::  Figures/blackbox.png
-   :scale: 50 %
    :align: center
 
    Figure 1: Procedural Abstraction
